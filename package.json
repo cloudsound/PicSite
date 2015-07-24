@@ -1,0 +1,23 @@
+{
+  "name": "picsite",
+  "version": "1.0.0",
+  "description": "pictures site ife summer task",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudsound/PicSite.git"
+  },
+  "keywords": [
+    "ria",
+    "ife"
+  ],
+  "author": "Gaohaoyang Lifeng",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudsound/PicSite/issues"
+  },
+  "homepage": "https://github.com/cloudsound/PicSite"
+}
