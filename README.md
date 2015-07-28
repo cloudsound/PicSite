@@ -68,3 +68,8 @@
     ├─ package.json # 依赖包信息
     └─ README.md # 说明及开发文档
 
+## 快速上手
+
+1. 安装nodeJS环境。
+    
+    [node官网](https://nodejs.org/)一键安装。安装成功后。
