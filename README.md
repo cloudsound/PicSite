@@ -3,7 +3,7 @@
 * [任务描述与要求](#任务描述与要求)
     * [描述](#描述)
     * [要求](#要求)
-    * [RIA相关学习材料](#RIA相关学习材料)
+    * [RIA相关学习材料](#相关学习材料)
 * [开发文档](#开发文档)
 
 # 任务描述与要求
@@ -26,7 +26,7 @@
 * 不需要登陆注册等功能
 * 如果需要使用Server端，不限制语言，Server端框架使用不限制
 
-## RIA相关学习材料
+## 相关学习材料
 
 * [what is a single page application (Wikipedia)](https://en.wikipedia.org/wiki/Single-page_application)
 * [Single page apps in depth](http://singlepageappbook.com/index.html)
