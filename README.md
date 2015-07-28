@@ -49,22 +49,22 @@
 
     PicSite
     │
-    ├─dist #工程化后导出的文件目录
-    │  ├─css #压缩后的CSS文件
-    │  └─js #压缩后的JS文件
+    ├─dist # 工程化后导出的文件目录
+    │  ├─css # 压缩后的CSS文件
+    │  └─js # 压缩后的JS文件
     │
-    ├─node_modules #开发时通过npm安装的各种包
+    ├─node_modules # 开发时通过npm安装的各种包
     │
-    ├─src #源文件
-    │   ├─css #将Sass编译后的CSS文件
-    │   ├─js #JS文件
-    │   └─sass #未编译的Sass文件
+    ├─src # 源文件
+    │   ├─css # 将Sass编译后的CSS文件
+    │   ├─js # JS文件
+    │   └─sass # 未编译的Sass文件
     │ 
-    ├─.gitignore #git忽略文件
-    ├─ design.md #设计图（包含很图片）
-    ├─ gulpfile.js #gulp文件，实现自动化编译和压缩静态文件
-    ├─ index.html #首页
-    ├─ LICENSE #许可证
-    ├─ package.json #依赖包信息
-    └─ README.md #说明及开发文档
+    ├─.gitignore # git忽略文件
+    ├─ design.md # 设计图（包含很图片）
+    ├─ gulpfile.js # gulp文件，实现自动化编译和压缩静态文件
+    ├─ index.html # 首页
+    ├─ LICENSE # 许可证
+    ├─ package.json # 依赖包信息
+    └─ README.md # 说明及开发文档
 
