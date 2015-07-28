@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/cloudsound/PicSite/issues"
   },
-  "homepage": "https://github.com/cloudsound/PicSite"
+  "homepage": "https://github.com/cloudsound/PicSite",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
 }
