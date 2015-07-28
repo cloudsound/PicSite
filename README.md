@@ -3,6 +3,8 @@
 [PicSite](#PicSite)
 &#9;[任务描述与要求](#任务描述与要求)
 
+[开发文档](#开发文档)
+
 
 # PicSite
 
@@ -35,3 +37,7 @@
 * [Developing Single Page Apps with Backbone.js](https://singlepagebook.supportbee.com/)
 * [AngularJS Tutorial - Building a Web App in 5 minutes](https://www.airpair.com/angularjs/building-angularjs-app-tutorial)
 * [Building single page apps using web components](https://www.polymer-project.org/0.5/articles/spa.html)
+
+# 开发文档
+
+这里记录开发过程的所有说明、架构、技术选择、工具选择、合作方式等。有什么新的进展在这里更新。
