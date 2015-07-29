@@ -27,7 +27,7 @@ gulp.task('minify-css', function() {
     .pipe(gulp.dest('dist/css'));
 });
 
-// 压缩 JavaScript
+// 校验和压缩 JavaScript
 gulp.task('js', function () {
    return gulp.src(['src/js/**/*.js','!src/js/**/*.min.js'])
       .pipe(jshint())

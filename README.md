@@ -153,6 +153,8 @@
         ├── lodash@3.10.0
         └── jshint@2.8.0 (strip-json-comments@1.0.2, exit@0.1.2, console-browserify@1.1.0, shelljs@0.3.0, cli@0.6.6, htmlparser2@3.8.3, lodash@3.7.0)
 
+    并且在工程目录下会出现 node_modules 文件夹，里面为刚刚安装的所有模块。
+
     至此环境搭建基本完成。
 
 3. 关于Gulp
