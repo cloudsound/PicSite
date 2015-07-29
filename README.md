@@ -1,4 +1,4 @@
-## 目录
+# 目录
 
 * [任务描述与要求](#任务描述与要求)
     * [描述](#描述)
@@ -161,7 +161,7 @@
 
     关于 Gulp 的入门学习，可参考 [nimojs](https://github.com/nimojs) 写的 [Gulp 入门指南 Gulp-book](https://github.com/nimojs/gulp-book)。
 
-    我们配好环境后，在命令行中输入
+    我们配好环境后，在命令行中输入 `gulp` 如下：
 
         E:\GitWorkSpace\PicSite (master)
         λ gulp
