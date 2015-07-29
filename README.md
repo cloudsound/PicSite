@@ -72,4 +72,84 @@
 
 1. 安装nodeJS环境。
     
-    [node官网](https://nodejs.org/)一键安装。安装成功后。
+    [node官网](https://nodejs.org/)一键安装。安装成功后。命令行输入：
+
+        node -v
+        v0.12.7
+
+    得到版本号，即安装成功。
+
+    这里推荐 **cmder** 代替原有的 Windows cmd。cmder官网：https://github.com/bliker/cmder
+
+2. 将项目clone到本地，进入工程目录执行：
+
+        npm install
+
+    这行命令的意思是自动安装 `package.json` 文件中的开发依赖 `devDependencies`。
+    
+    * 目前这个项目依赖
+        * "gulp": "^3.9.0",
+        * "gulp-jshint": "^1.11.0",
+        * "gulp-minify-css": "^1.2.0",
+        * "gulp-ruby-sass": "^1.0.5",
+        * "gulp-uglify": "^1.2.0"
+    
+    这一环节因为长城防火墙问题，可能会异常缓慢，极有可能失败，请耐心等待或者使用[**淘宝镜像**](http://npm.taobao.org/)。
+
+    安装成功后，会有类似如下显示：
+
+        λ npm install
+        npm WARN package.json Dependency 'gulp' exists in both dependencies and devDependencies, using 'gulp@^3.9.0' from dependencies
+        gulp-minify-css@1.2.0 node_modules\gulp-minify-css
+        ├── object-assign@3.0.0
+        ├── readable-stream@2.0.2 (process-nextick-args@1.0.2, inherits@2.0.1, isarray@0.0.1, util-deprecate@1.0.1, string_decoder@0.10.31, core-util-is@1.0.1)
+        ├── vinyl-bufferstream@1.0.1 (bufferstreams@1.0.1)
+        ├── vinyl-sourcemaps-apply@0.1.4 (source-map@0.1.43)
+        ├── gulp-util@3.0.6 (array-differ@1.0.0, array-uniq@1.0.2, lodash._reinterpolate@3.0.0, lodash._reevaluate@3.0.0, beeper@1.1.0, lodash._reescape@3.0.0, replace-ext@0.0.1, minimist@1.1.2, through2@2.0.0, vinyl@0.5.0, chalk@1.1.0, lodash.template@3.6.2, multipipe@0.1.2, dateformat@1.0.11)
+        └── clean-css@3.3.7 (commander@2.8.1, source-map@0.4.4)
+
+        gulp-ruby-sass@1.0.5 node_modules\gulp-ruby-sass
+        ├── slash@1.0.0
+        ├── dargs@2.1.0
+        ├── object-assign@2.1.1
+        ├── win-spawn@2.0.0
+        ├── convert-source-map@1.1.1
+        ├── each-async@1.1.1 (set-immediate-shim@1.0.1, onetime@1.0.0)
+        ├── vinyl@0.4.6 (clone-stats@0.0.1, clone@0.2.0)
+        ├── mkdirp@0.5.1 (minimist@0.0.8)
+        ├── glob@4.5.3 (inherits@2.0.1, inflight@1.0.4, once@1.3.2, minimatch@2.0.10)
+        ├── rimraf@2.4.2 (glob@5.0.14)
+        ├── gulp-util@3.0.6 (array-differ@1.0.0, array-uniq@1.0.2, lodash._reevaluate@3.0.0, lodash._reinterpolate@3.0.0, lodash._reescape@3.0.0, beeper@1.1.0, object-assign@3.0.0, replace-ext@0.0.1, minimist@1.1.2, vinyl@0.5.0, chalk@1.1.0, lodash.template@3.6.2, through2@2.0.0, multipipe@0.1.2, dateformat@1.0.11)
+        └── vinyl-fs@1.0.0 (merge-stream@0.1.8, graceful-fs@3.0.8, strip-bom@1.0.0, through2@0.6.5, duplexify@3.4.2, glob-stream@4.1.1, glob-watcher@0.0.8)
+
+        gulp@3.9.0 node_modules\gulp
+        ├── pretty-hrtime@1.0.0
+        ├── interpret@0.6.5
+        ├── deprecated@0.0.1
+        ├── archy@1.0.0
+        ├── minimist@1.1.2
+        ├── tildify@1.1.0 (os-homedir@1.0.1)
+        ├── v8flags@2.0.10 (user-home@1.1.1)
+        ├── chalk@1.1.0 (escape-string-regexp@1.0.3, supports-color@2.0.0, ansi-styles@2.1.0, strip-ansi@3.0.0, has-ansi@2.0.0)
+        ├── semver@4.3.6
+        ├── orchestrator@0.3.7 (stream-consume@0.1.0, sequencify@0.0.7, end-of-stream@0.1.5)
+        ├── gulp-util@3.0.6 (array-differ@1.0.0, array-uniq@1.0.2, lodash._reevaluate@3.0.0, lodash._reescape@3.0.0, beeper@1.1.0, object-assign@3.0.0, lodash._reinterpolate@3.0.0, replace-ext@0.0.1, vinyl@0.5.0, lodash.template@3.6.2, through2@2.0.0, multipipe@0.1.2, dateformat@1.0.11)
+        ├── liftoff@2.1.0 (extend@2.0.1, rechoir@0.6.2, flagged-respawn@0.3.1, resolve@1.1.6, findup-sync@0.2.1)
+        └── vinyl-fs@0.3.13 (graceful-fs@3.0.8, strip-bom@1.0.0, defaults@1.0.2, vinyl@0.4.6, mkdirp@0.5.1, through2@0.6.5, glob-stream@3.1.18, glob-watcher@0.0.6)
+
+        gulp-uglify@1.2.0 node_modules\gulp-uglify
+        ├── deap@1.0.0
+        ├── through2@0.6.5 (xtend@4.0.0, readable-stream@1.0.33)
+        ├── vinyl-sourcemaps-apply@0.1.4 (source-map@0.1.43)
+        ├── gulp-util@3.0.6 (array-differ@1.0.0, array-uniq@1.0.2, beeper@1.1.0, lodash._reevaluate@3.0.0, lodash._reinterpolate@3.0.0, lodash._reescape@3.0.0, object-assign@3.0.0, replace-ext@0.0.1, minimist@1.1.2, vinyl@0.5.0, lodash.template@3.6.2, chalk@1.1.0, through2@2.0.0, multipipe@0.1.2, dateformat@1.0.11)
+        └── uglify-js@2.4.19 (uglify-to-browserify@1.0.2, async@0.2.10, source-map@0.1.34, yargs@3.5.4)
+
+        gulp-jshint@1.11.2 node_modules\gulp-jshint
+        ├── through2@0.6.5 (xtend@4.0.0, readable-stream@1.0.33)
+        ├── minimatch@2.0.10 (brace-expansion@1.1.0)
+        ├── gulp-util@3.0.6 (array-differ@1.0.0, array-uniq@1.0.2, lodash._reevaluate@3.0.0, lodash._reinterpolate@3.0.0, beeper@1.1.0, lodash._reescape@3.0.0, object-assign@3.0.0, replace-ext@0.0.1, minimist@1.1.2, vinyl@0.5.0, chalk@1.1.0, lodash.template@3.6.2, through2@2.0.0, multipipe@0.1.2, dateformat@1.0.11)
+        ├── rcloader@0.1.2 (rcfinder@0.1.8, lodash@2.4.2)
+        ├── lodash@3.10.0
+        └── jshint@2.8.0 (strip-json-comments@1.0.2, exit@0.1.2, console-browserify@1.1.0, shelljs@0.3.0, cli@0.6.6, htmlparser2@3.8.3, lodash@3.7.0)
+
+
