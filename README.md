@@ -6,6 +6,7 @@
     * [RIA相关学习材料](#相关学习材料)
 * [开发文档](#开发文档)
     * [项目结构](#项目结构)
+    * [快速上手](#快速上手)
 
 # 任务描述与要求
 
@@ -94,7 +95,7 @@
         * "gulp-ruby-sass": "^1.0.5",
         * "gulp-uglify": "^1.2.0"
     
-    这一环节因为长城防火墙问题，可能会异常缓慢，极有可能失败，请耐心等待或者使用[**淘宝镜像**](http://npm.taobao.org/)。
+    这一环节因为长城防火墙问题，可能会异常缓慢，极有可能失败，请耐心等待或者使用[**npm 淘宝镜像**](http://npm.taobao.org/)。
 
     安装成功后，会有类似如下显示：
 
@@ -152,4 +153,35 @@
         ├── lodash@3.10.0
         └── jshint@2.8.0 (strip-json-comments@1.0.2, exit@0.1.2, console-browserify@1.1.0, shelljs@0.3.0, cli@0.6.6, htmlparser2@3.8.3, lodash@3.7.0)
 
+    至此环境搭建基本完成。
+
+3. 关于Gulp
+
+    我们使用 Gulp 构建项目，实现自动编译 Sass、压缩 CSS、校验 JavaScript、压缩 JavaScript。
+
+    关于 Gulp 的入门学习，可参考 [nimojs](https://github.com/nimojs) 写的 [Gulp 入门指南 Gulp-book](https://github.com/nimojs/gulp-book)。
+
+    我们配好环境后，在命令行中输入
+
+        E:\GitWorkSpace\PicSite (master)
+        λ gulp
+        [17:09:01] Using gulpfile E:\GitWorkSpace\PicSite\gulpfile.js
+        [17:09:01] Starting 'sass'...
+        [17:09:01] Starting 'watchSassBuild'...
+        [17:09:01] Finished 'watchSassBuild' after 25 ms
+        [17:09:01] Starting 'minify-css'...
+        [17:09:01] Starting 'js'...
+        [17:09:01] Starting 'watchCssJavaScript'...
+        [17:09:01] Finished 'watchCssJavaScript' after 8.35 ms
+        [17:09:01] Finished 'minify-css' after 89 ms
+        [17:09:01] Finished 'js' after 70 ms
+        [17:09:01] Starting 'acj'...
+        [17:09:01] Finished 'acj' after 11 μs
+        [17:09:03] Finished 'sass' after 2 s
+        [17:09:03] Starting 'asb'...
+        [17:09:03] Finished 'asb' after 12 μs
+        [17:09:03] Starting 'default'...
+        [17:09:03] Finished 'default' after 10 μs
+
+    出现上述状态，即 Gulp 环境、gulpfile.js 和 package.json 运行都正常。用 `Ctrl`+`C` 终止 Gulp 执行。
 
