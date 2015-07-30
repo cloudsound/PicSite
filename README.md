@@ -6,7 +6,8 @@
     * [RIA相关学习材料](#相关学习材料)
 * [开发文档](#开发文档)
     * [项目结构](#项目结构)
-    * [快速上手](#快速上手)
+    * [文件说明](#文件说明)
+    * [开发环境配置](#开发环境配置)
 
 # 任务描述与要求
 
@@ -69,7 +70,22 @@
     ├─ package.json # 依赖包信息
     └─ README.md # 说明及开发文档
 
-## 快速上手
+## 文件说明
+
+我们只需要操作 `index.html`, `manage.html`, `src\sass`, `src\js` 这4个文件或目录。
+
+* 
+
+* index.html
+    
+    首页。用于图片展示页。
+
+* Sass 编译及 CSS 压缩
+
+* JavaScript 校验及压缩
+
+
+## 开发环境配置
 
 1. 安装nodeJS环境。
     
@@ -186,4 +202,5 @@
         [17:09:03] Finished 'default' after 10 μs
 
     出现上述状态，即 Gulp 环境、gulpfile.js 和 package.json 运行都正常。用 `Ctrl`+`C` 终止 Gulp 执行。
+
 
