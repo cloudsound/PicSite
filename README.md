@@ -8,6 +8,10 @@
     * [项目结构](#项目结构)
     * [文件说明](#文件说明)
     * [开发环境配置](#开发环境配置)
+    * [开发详细过程](#开发详细过程)
+        * [界面开发](#界面开发)
+        * [业务逻辑](#业务逻辑)
+        * [界面上的控制](#界面上的控制)
 
 # 任务描述与要求
 
@@ -74,15 +78,30 @@
 
 我们只需要操作 `index.html`, `manage.html`, `src\sass`, `src\js` 这4个文件或目录。
 
-* 
-
 * index.html
     
     首页。用于图片展示页。
 
+* manage.html
+
+    管理页面。用于后台管理。
+
 * Sass 编译及 CSS 压缩
 
+    1. 在 src/sass 下写 scss
+    2. 经过 gulp 编译，写入 src/css 目录
+    3. 再经过 gulp 压缩，写入 dist/css 目录
+    4. index.html 和 manage.html 外联 dist/css。
+
+    **注意**：2、3 为执行 `gulp` 后的自动过程。
+    
 * JavaScript 校验及压缩
+
+    1. 在 src/js 下写 JavaScript 代码
+    2. 经过 gulp 编译和压缩，写入 dist/js 目录
+    3. index.html 和 manage.html 外联 dist/js
+
+    **注**：2 为执行 `gulp` 后的自动过程。
 
 
 ## 开发环境配置
@@ -203,4 +222,22 @@
 
     出现上述状态，即 Gulp 环境、gulpfile.js 和 package.json 运行都正常。用 `Ctrl`+`C` 终止 Gulp 执行。
 
+## 开发详细过程
 
+### 界面开发
+
+主要是 index.html, manage.html 的开发。只开发 HTML 和 CSS(Scss) 的开发。
+
+### 图片存储
+
+确定图片的存储形式和存储结构。
+
+DAO.js 的开发。完成图片的增删查改开发操作。
+
+### 业务逻辑
+
+service.js 的开发。
+
+### 界面上的控制
+
+controller.js 的开发。
