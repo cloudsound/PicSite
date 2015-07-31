@@ -1,3 +1,19 @@
-header{
+header {
+    height: $headerHeight;
+    line-height: $headerHeight;
     background-color: $banner-color;
+    font-size: 1.6rem;
+    color: $word-color;
+}
+.wrap {
+    text-align: center;
+
+    span {
+        margin: 0 30px;
+        cursor:pointer;
+
+        &:hover{
+            color:$word-color-active;
+        }
+    }
 }

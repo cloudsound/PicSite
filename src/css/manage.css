@@ -4,7 +4,13 @@
 /**
  * reset
  */
-div, body, h1, h2, h3, ul, li {
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Microsoft YaHei", "SimHei", "STHeiti", sans-serif; }
+
+header, footer, div, body, h1, h2, h3, ul, li {
   margin: 0;
   padding: 0; }
 

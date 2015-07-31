@@ -4,7 +4,13 @@
 /**
  * reset
  */
-div, body, h1, h2, h3, ul, li {
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: "Microsoft YaHei", "SimHei", "STHeiti", sans-serif; }
+
+header, footer, div, body, h1, h2, h3, ul, li {
   margin: 0;
   padding: 0; }
 
@@ -12,4 +18,16 @@ div, body, h1, h2, h3, ul, li {
  * header
  */
 header {
-  background-color: #2d4f7c; }
+  height: 50px;
+  line-height: 50px;
+  background-color: #2d4f7c;
+  font-size: 1.6rem;
+  color: #ACCADF; }
+
+.wrap {
+  text-align: center; }
+  .wrap span {
+    margin: 0 30px;
+    cursor: pointer; }
+    .wrap span:hover {
+      color: #F5FBFF; }
