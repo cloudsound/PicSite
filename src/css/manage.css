@@ -5,9 +5,11 @@
  * reset
  */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
 
 body {
+  height: 100%;
   font-family: "Microsoft YaHei", "SimHei", "STHeiti", sans-serif; }
 
 header, footer, div, body, h1, h2, h3, ul, li {
@@ -17,14 +19,31 @@ header, footer, div, body, h1, h2, h3, ul, li {
 /**
  * sidebar
  */
+.outer-wrap {
+  overflow: hidden;
+  min-height: 100%; }
+
 .sidebar {
+  margin-bottom: -10000px;
+  padding-bottom: 10000px;
   width: 240px;
-  min-height: 780px;
-  background-color: #2d4f7c;
+  background-color: #2b4064;
   float: left; }
+  .sidebar h1 {
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    font-size: 1.8rem;
+    background-color: #2c3049;
+    color: #F5FBFF; }
 
 /**
  * main pistures
  */
 .main {
-  overflow: hidden; }
+  margin-bottom: -10000px;
+  padding-bottom: 10000px;
+  overflow: hidden;
+  background-color: #ededed; }

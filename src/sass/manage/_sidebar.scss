@@ -1,6 +1,22 @@
+.outer-wrap{
+    overflow:hidden;
+    min-height: 100%;
+}
 .sidebar{
+    margin-bottom: -10000px;
+    padding-bottom: 10000px;   
     width: 240px;
-    min-height: 780px;
     background-color: $banner-color;
     float: left;
+
+    h1{
+        height:50px;
+        text-align: center;
+        line-height: 50px;
+        letter-spacing: 5px;
+        font-weight: normal;
+        font-size: 1.8rem;
+        background-color:$title-back;
+        color:$word-color-active;
+    }
 }

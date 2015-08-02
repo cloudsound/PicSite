@@ -5,9 +5,11 @@
  * reset
  */
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
 
 body {
+  height: 100%;
   font-family: "Microsoft YaHei", "SimHei", "STHeiti", sans-serif; }
 
 header, footer, div, body, h1, h2, h3, ul, li {
@@ -20,7 +22,7 @@ header, footer, div, body, h1, h2, h3, ul, li {
 header {
   height: 50px;
   line-height: 50px;
-  background-color: #2d4f7c;
+  background-color: #2b4064;
   font-size: 1.6rem;
   color: #ACCADF; }
 
