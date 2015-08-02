@@ -15,7 +15,16 @@ header, footer, div, body, h1, h2, h3, ul, li {
   padding: 0; }
 
 /**
- * left
+ * sidebar
  */
-.pic-manage {
-  background-color: #2d4f7c; }
+.sidebar {
+  width: 240px;
+  min-height: 780px;
+  background-color: #2d4f7c;
+  float: left; }
+
+/**
+ * main pistures
+ */
+.main {
+  overflow: hidden; }
