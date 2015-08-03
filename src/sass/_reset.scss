@@ -10,3 +10,11 @@ header,footer,div, body, h1, h2, h3, ul, li {
     margin: 0;
     padding: 0;
 }
+li {
+    list-style-type: none;
+}
+button{
+    border:none;
+    outline: none;
+    cursor: pointer;
+}
