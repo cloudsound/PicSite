@@ -17,13 +17,19 @@
 
 这个仓库用于完成 [RIA扬帆班任务一：图片网站](https://github.com/baidu-ife/ife/blob/master/2015_summer/task/ria_yangfan_01.md)
 
+同时用于完成任务2 [RIA扬帆班任务二：图片复杂编辑](https://github.com/baidu-ife/ife/blob/master/2015_summer/task/ria_yangfan_02.md)
+
 ## 描述
 
 实现一个个人图片展示网站，包括展现及后台管理。
 
-[设计图](design.md)
+基于任务一，实现对于图片的复杂编辑功能。
+
+[任务一、二的设计图](design.md)
 
 ## 要求
+
+任务一：
 
 * 团队协作完成
 * 支持在管理端拖拽图片来改变图片的分类，以及图片在展示页面的排列顺序
@@ -32,6 +38,13 @@
 * 除了jQuery及WebUploader，不允许使用其他框架类库
 * 不需要登陆注册等功能
 * 如果需要使用Server端，不限制语言，Server端框架使用不限制
+
+任务二：
+
+* 团队协作完成
+* 进一步完善任务一的功能细节及用户体验
+* 提供图片的裁剪功能
+* 基于Canvas或者WebGL实现对于图片的各种滤镜功能
 
 ## 相关学习材料
 
