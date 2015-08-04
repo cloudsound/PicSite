@@ -51,7 +51,7 @@ button {
     background-color: #f78755;
     width: 140px;
     height: 35px;
-    line-height: 30px;
+    line-height: 35px;
     margin: 50px auto;
     border-radius: 5px;
     color: #F5FBFF;
@@ -99,7 +99,7 @@ button {
   .main .add-pic {
     width: 140px;
     height: 35px;
-    line-height: 30px;
+    line-height: 35px;
     border-radius: 4px;
     background-color: #2b4064;
     color: #F5FBFF;
