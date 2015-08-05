@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Pictures Site</title>
-    <link rel="stylesheet" href="src/css/index.css">
-    <link rel="stylesheet" type="text/css" href="src/css/lightbox.css">
+    <link rel="stylesheet" href="dist/css/index.css">
+    <link rel="stylesheet"  href="dist/css/lightbox.css">
 </head>
 <body>
 <div class="header">
@@ -116,16 +116,16 @@
     
 </div>
 
-    <script src="src/js/index.js"></script>
-    <script src="src/js/jquery.js"></script>
-    <script src="src/js/lightbox.js"></script>
+    <script src="dist/js/index.js"></script>
+    <script src="dist/js/jquery.js"></script>
+    <script src="dist/js/lightbox.js"></script>
     <script>
     $(function(){
         var lightbox = new LightBox({
-            speed:"fast",
+            speed:500,
             maxWidth:900,
             maxHeight:600,
-            maskOpacity:0.4
+            maskOpacity:0.8
         });
     });
     </script>
