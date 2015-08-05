@@ -7,7 +7,7 @@
             speed:500
         };
 
-        $.extend(this.settings,settings ||{})
+        $.extend(this.settings,settings ||{});
 
         //创建遮罩层和弹出框
         this.popupMask = $('<div id="G-lightbox-mask">');
@@ -49,7 +49,7 @@
                 self.groupName = currentGroupName;
                 //根据当前组别获取同一组数据
                 self.getGroup();
-            };
+            }
            //初始化弹出
             self.initPopup($(this));
         });
@@ -70,12 +70,12 @@
         this.nextBtn.hover(function(){
                             if(!$(this).hasClass("disabled") && self.groupData.length>1){
                                 $(this).addClass("lightbox-next-btn-show");
-                            };
+                            }
 
                         },function(){
                             if(!$(this).hasClass("disabled") && self.groupData.length>1){
                                 $(this).removeClass("lightbox-next-btn-show");
-                            };
+                            }
                         }).click(function(e){
                             if(!$(this).hasClass("disabled") && self.flag){
                                 self.flag = false;
@@ -86,11 +86,11 @@
         this.prevBtn.hover(function(){
                             if(!$(this).hasClass("disabled") && self.groupData.length>1){
                                 $(this).addClass("lightbox-prev-btn-show");
-                            };
+                            }
                         },function(){
                             if(!$(this).hasClass("disabled") && self.groupData.length>1){
                                 $(this).removeClass("lightbox-prev-btn-show");
-                            };
+                            }
                         }).click(function(e){
                             if(!$(this).hasClass("disabled") && self.flag){
                                 self.flag = false; //动画未结束连续点击，就不让点下一次了
@@ -107,7 +107,7 @@
                 timer = window.setTimeout(function(){
                     self.loadPicSize(self.groupData[self.index].src);
                 },500);
-            };
+            }
         }).keyup(function(e){
             var keyValue = e.which;
             //console.log(keyValue);
@@ -116,8 +116,8 @@
                     self.prevBtn.click();
                 }else if(keyValue == 40 || keyValue == 39){
                     self.nextBtn.click();
-                };
-            };
+                }
+            }
         });
         
     };
@@ -130,10 +130,10 @@
                 this.index++;
                 if(this.index >= this.groupData.length-1){
                     this.nextBtn.addClass("disabled").removeClass("lightbox-next-btn-show");
-                };
-                if(this.index != 0){
+                }
+                if(this.index !== 0){
                     this.prevBtn.removeClass("disabled");
-                };
+                }
 
                 var src = this.groupData[this.index].src;
                 this.loadPicSize(src);
@@ -142,15 +142,15 @@
                 this.index--;
                 if(this.index <=0 ){
                     this.prevBtn.addClass("disabled").removeClass("lightbox-prev-btn-show");
-                };
+                }
                 if(this.index != this.groupData.length-1){
                     this.nextBtn.removeClass("disabled");
-                };
+                }
                 var src = this.groupData[this.index].src;
                 this.loadPicSize(src);
                 //console.log("prev");
 
-            };
+            }
 
 
         },
@@ -230,13 +230,13 @@
                 img.onreadystatechange = function(){
                     if(this.readyState == "complete"){
                         callback();
-                    };
+                    }
                 };
             }else{
                 img.onload = function(){
                     callback();
                 };
-            };
+            }
             img.src = src;
         },
         showMaskAndPoupup:function(sourceSrc,currentId){
@@ -294,7 +294,7 @@
                     this.nextBtn.removeClass("disabled");
                     this.prevBtn.removeClass("disabled");
                 }
-            };
+            }
             
         },
         /*获取元素在一组数据中的索引*/
@@ -358,5 +358,5 @@
        this.bodyNode.append(this.popupMask, this.popupWin);
         }
     };
-    window["LightBox"] = LightBox;
+    window.LightBox = LightBox;
 })(jQuery);
