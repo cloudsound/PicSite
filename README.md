@@ -239,7 +239,7 @@
 
 ### 界面开发
 
-主要是 index.html, manage.html 的开发。只开发 HTML 和 CSS(Scss) 的开发。
+主要是 index.html, manage.html 的开发。只针对 HTML 和 CSS(Scss) 的开发。
 
 ### 图片存储
 
