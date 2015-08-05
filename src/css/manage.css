@@ -84,6 +84,7 @@ button {
       .sidebar .cate-list li:hover {
         border-left: 4px solid #f78755;
         padding-left: 42px;
+        color: #F5FBFF;
         background-color: #2d4e7c; }
         .sidebar .cate-list li:hover i {
           display: inline-block; }
@@ -136,3 +137,40 @@ button {
         .main .pics-area .block .pic-title div {
           float: right;
           color: #d7e0e4; }
+
+/**
+ * click right
+ */
+.click-right {
+  display: none;
+  width: 130px;
+  height: 109px;
+  position: absolute;
+  top: 500px;
+  left: 300px;
+  z-index: 100;
+  overflow: hidden;
+  background-color: #2b4064;
+  border-radius: 5px;
+  color: #ACCADF;
+  font-size: 1.4rem;
+  -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
+  -o-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.6); }
+  .click-right li {
+    height: 35px;
+    line-height: 35px;
+    background-color: #2b446b;
+    margin-bottom: 2px;
+    padding-left: 35px;
+    cursor: pointer; }
+    .click-right li:last-of-type {
+      margin: 0; }
+    .click-right li i {
+      width: 25px; }
+    .click-right li:hover {
+      color: #F5FBFF;
+      background-color: #2d4e7c;
+      border-left: 5px solid #f78755;
+      padding-left: 30px; }
