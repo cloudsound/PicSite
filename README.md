@@ -235,6 +235,27 @@
 
     出现上述状态，即 Gulp 环境、gulpfile.js 和 package.json 运行都正常。用 `Ctrl`+`C` 终止 Gulp 执行。
 
+    **注意：**
+
+    如果在执行 gulp 的时候，在 scss 中有中文的时候报错。类似如下：
+
+        [22:42:23] error src/sass/lightbox.scss (Line 12: Invalid GBK character "\xE4")
+
+    可以参考这里解决。[Ruby环境SCSS编译中文出现Syntax error: Invalid GBK character错误解决方法](http://www.webdevs.cn/article/59.html)
+
+    找到Ruby的安装目录，里面也有sass模块，如这个路径：
+
+        C:\Ruby21-x64\lib\ruby\gems\2.1.0\gems\sass-3.4.8\lib\sass
+
+    在该路文件里面 engine.rb，添加一行代码：
+
+        require ...
+        require 'sass/supports'
+
+        Encoding.default_external = Encoding.find('utf-8')
+        
+    放在所有的require XXXX 之后即可。
+
 ## 开发详细过程
 
 ### 界面开发
