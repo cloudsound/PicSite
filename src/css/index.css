@@ -96,7 +96,7 @@ header {
     top: 0;
     left: 0;
     
-    background: #2D4F7B url(../../icon/menu.png) no-repeat 20px 20px;
+    background: #2D4F7B url(http://7xk9uj.com1.z0.glb.clouddn.com/menu.png) no-repeat 20px 20px;
     
 
   }
@@ -128,7 +128,7 @@ header {
     margin: 0 0 5px;
   }
   .header ul:hover .current { 
-        background: #2D4F7B url(../../icon/check.png) no-repeat 20px 20px; 
+        background: #2D4F7B url(http://7xk9uj.com1.z0.glb.clouddn.com/check.png) no-repeat 20px 20px; 
     } 
   
 

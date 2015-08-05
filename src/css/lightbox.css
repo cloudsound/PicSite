@@ -13,7 +13,8 @@
     z-index: 1000;
     display: none;
     /* ie9以下半透明兼容性问题 */
-     background: url(../../icon/opacity.png repeat left top);
+    /*  background: url(http://7xk9uj.com1.z0.glb.clouddn.com/opacity.png) repeat left top; 
+    */
 }
 #G-lightbox-popup{
     /* ie6不识别fixed */
@@ -32,7 +33,7 @@
     border: 5px solid #fff;
     border-radius: 3px;
     overflow: hidden;
-    background: #fff url(../../icon/loading.gif) no-repeat center center;
+    background: #fff url(http://7xk9uj.com1.z0.glb.clouddn.com/loading.gif) no-repeat center center;
 }
 #G-lightbox-popup .lightbox-pic-view .lightbox-btn{
     position: absolute;
@@ -40,7 +41,7 @@
     width: 30%;
     height: 100%;
     z-index: 1;
-    background: url(../../icon/transparent.png repeat left top);
+    background: url(http://7xk9uj.com1.z0.glb.clouddn.com/transparent.png) repeat left top;
 }
 #G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn{
     left: 0;
@@ -51,11 +52,11 @@
     
 }
 #G-lightbox-popup .lightbox-pic-view .lightbox-prev-btn-show{
-     background: url(../../icon/prev.png) no-repeat left center;
+     background: url(http://7xk9uj.com1.z0.glb.clouddn.com/prev.png) no-repeat left center;
      cursor: pointer;
 }
 #G-lightbox-popup .lightbox-pic-view .lightbox-next-btn-show{
-    background: url(../../icon/next.png) no-repeat right center;
+    background: url(http://7xk9uj.com1.z0.glb.clouddn.com/next.png) no-repeat right center;
     cursor: pointer;
 }
 
@@ -69,8 +70,8 @@
     z-index: 2;
     margin: 0 5px;
     /* 要放在后面 */
-    margin-top: -65px;
-    background: url(../../icon/opacity.png repeat left top);
+    margin-top: -70px;
+    background: url(http://7xk9uj.com1.z0.glb.clouddn.com/opacity.png) repeat left top;
     font-size: 12px;
 }
 #G-lightbox-popup .lightbox-pic-caption .lightbox-caption-area{
@@ -86,5 +87,5 @@
     height: 27px;
     right: 10px;
     top: 13px;
-    background: url(../../icon/close.png) no-repeat center center;
+    background: url(http://7xk9uj.com1.z0.glb.clouddn.com/close.png) no-repeat center center;
 }
