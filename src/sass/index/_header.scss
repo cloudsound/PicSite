@@ -1,19 +1,37 @@
-header {
+.header {
     height: $headerHeight;
+    width: 100%;
     line-height: $headerHeight;
     background-color: $banner-color;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: $word-color;
-}
-.wrap {
     text-align: center;
+    position: relative;
 
-    span {
-        margin: 0 30px;
-        cursor:pointer;
 
+    ul{
+        zoom:1;
+        text-align: center;
+
+        li{
+            margin: 0 5px; 
+            display: inline-block;
+            .current{
+                color:$word-color-active;
+            }
+        }
+    }
+    a{
+        color: $word-color;
+        text-decoration: none;
+        height:48px;
+        line-height: 48px;
+        margin-bottom: 2px;
         &:hover{
             color:$word-color-active;
         }
     }
+
+
+
 }
