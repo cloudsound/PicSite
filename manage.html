@@ -30,7 +30,15 @@
                         <li><i class="fa fa-trash-o"></i>删除</li>
                     </ul>
                 </div>
+
                 <button class="add-pic">导入图片</button>
+<!--                 dom结构部分
+<div id="uploader-demo">
+    用来存放item
+    <div id="fileList" class="uploader-list"></div>
+    <div id="filePicker">选择图片</div>
+</div> -->
+
                 <div class="pics-area">
                     <div class="block">
                         <img src="http://upload.csxww.com/2014/0912/1410485134671.jpg" alt="">
@@ -107,7 +115,35 @@
             </div>
         </div>
 
-        
 
+
+    <script src="dist/js/jquery.js"></script>
+    <!-- web uploader -->
+    <script src="http://cdn.staticfile.org/webuploader/0.1.0/webuploader.min.js"></script>
+    <script>
+        // 初始化Web Uploader
+var uploader = WebUploader.create({
+
+    // 选完文件后，是否自动上传。
+    auto: true,
+
+    // swf文件路径
+    swf: BASE_URL + '/js/Uploader.swf',
+
+    // 文件接收服务端。
+    server: 'http://webuploader.duapp.com/server/fileupload.php',
+
+    // 选择文件的按钮。可选。
+    // 内部根据当前运行是创建，可能是input元素，也可能是flash.
+    pick: '#filePicker',
+
+    // 只允许选择图片文件。
+    accept: {
+        title: 'Images',
+        extensions: 'gif,jpg,jpeg,bmp,png',
+        mimeTypes: 'image/*'
+    }
+});
+    </script>
     </body>
 </html>
